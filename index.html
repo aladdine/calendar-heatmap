@@ -156,7 +156,7 @@
           document.getElementById("week_id").innerHTML = "This week's";
        }
 
-       var dataset_label = dataset.replace(/_/g, " ").slice(0, -4); // formatting of the dataset label
+       var dataset_label = dataset.replace(/previous_week_/g, " ").slice(0, -4); // formatting of the dataset label
        document.getElementById("dataset_id").innerHTML = dataset_label; 
        document.getElementById("employee_id").innerHTML = employee;
 
